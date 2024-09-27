@@ -12,6 +12,7 @@
             font-family: 'Roboto', sans-serif;
             background-color: #f0f4f8;
             color: #333;
+            overflow-x: hidden; /* Evita el desplazamiento horizontal */
         }
 
         header {
@@ -50,6 +51,7 @@
             border-radius: 50%;
             margin-top: 20px;
             transition: transform 0.3s ease;
+            max-width: 100%; /* Para asegurar que la imagen no exceda el ancho del viewport */
         }
 
         header a img:hover {
@@ -143,6 +145,12 @@
             flex: 1;
             padding: 20px;
         }
+
+        /* Asegura que el contenido no exceda el ancho máximo de la pantalla */
+        * {
+            box-sizing: border-box;
+        }
+
     </style>
 </head>
 <body>
@@ -165,9 +173,6 @@
             <strong>Email:</strong> <a href="mailto:diegoten2014@gmail.com">diegoten2014@gmail.com</a>
         </div>
         <div>
-            <strong>Teléfono:</strong> +598 91296761
-        </div>
-        <div>
             <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/diego-tenenbaum-li%C3%B3n-538589222/">Diego Tenenbaum</a>
         </div>
     </div>
@@ -175,7 +180,7 @@
 
 <section>
     <h2>Resumen Profesional</h2>
-    <p>Soy un Full Stack Developer con experiencia en el diseño y desarrollo de aplicaciones web. Tengo sólidas habilidades en lenguajes de programación, tecnologías de front-end y back-end, y siempre busco aprender nuevas tecnologías. Tengo experiencia en **Angular** y **.NET**, y soy proactivo y entusiasta del aprendizaje continuo.</p>
+    <p>Soy un Full Stack Developer con experiencia en el diseño y desarrollo de aplicaciones web. Tengo sólidas habilidades en lenguajes de programación, tecnologías de front-end y back-end, y siempre busco aprender nuevas tecnologías. Tengo experiencia en <strong>Angular</strong> y <strong>.NET</strong>, y soy proactivo y entusiasta del aprendizaje continuo.</p>
 </section>
 
 <section>
@@ -185,10 +190,10 @@
         <li><strong>Full Stack Developer en 2innovateIT (Montevideo)</strong><br>2021 - Septiembre 2023
             <ul>
                 <li>Desarrollo de infraestructura digital para empresas fintech, bancos y créditos.</li>
-                <li>Desarrollo de aplicaciones web con **Angular**.</li>
-                <li>Desarrollo de backend usando **FrameBanking** y **Groovy**.</li>
-                <li>Gestión de bases de datos **SQL** y **PostgreSQL**. Migraciones con **Liquibase**.</li>
-                <li>Implementación de metodologías **agile** y **DevOps**.</li>
+                <li>Desarrollo de aplicaciones web con <strong>Angular</strong>.</li>
+                <li>Desarrollo de backend usando <strong>FrameBanking</strong> y <strong>Groovy</strong>.</li>
+                <li>Gestión de bases de datos <strong>SQL</strong> y <strong>PostgreSQL</strong>. Migraciones con <strong>Liquibase</strong>.</li>
+                <li>Implementación de metodologías <strong>agile</strong> y <strong>DevOps</strong>.</li>
             </ul>
         </li>
         <li><strong>Youth Leader en Betar Uruguay</strong><br>Febrero 2016 - Enero 2020
@@ -220,24 +225,22 @@
             <li>JavaScript, HTML, CSS, TypeScript</li>
             <li>Angular, Angular Material</li>
             <li>.NET, .NET Core, .NET Framework</li>
-            <li>C#, C++, Node.js</li>
-            <li>SQL (MySQL, PostgreSQL, Microsoft SQL Server), MongoDB, Typegoose</li>
-            <li>Metodologías ágiles y DevOps</li>
+            <li>DevOps, CI/CD</li>
+            <li>Docker, Kubernetes, GitHub Actions</li>
         </ul>
     </div>
-
     <div>
         <h2>Idiomas</h2>
         <ul>
-            <li><strong>Español:</strong> Nativo</li>
-            <li><strong>Inglés:</strong> Nivel intermedio (B2)</li>
-            <li><strong>Hebreo:</strong> Nivel intermedio</li>
+            <li>Español - Nativo</li>
+            <li>Inglés - Nivel avanzado (C1)</li>
+            <li>Hebreo - Nivel básico</li>
         </ul>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2024 Diego Tenenbaum. Todos los derechos reservados.</p>
+    <p>&copy; 2024 Diego Tenenbaum - Todos los derechos reservados.</p>
 </footer>
 
 </body>
